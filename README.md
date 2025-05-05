@@ -4,10 +4,12 @@ This guide shows you how to install and use `tmux` on a Linux VPS to ensure your
 
 ---
 
-## 📥 Step 1: Connect to Your VPS
+## 📥 Step 1: Connect to Your VPS (Replace your-username and your-vps-ip with your actual SSH credentials)
 
 ```bash
 ssh your-username@your-vps-ip
+```
+
 
 Step 2: Install tmux
 
@@ -15,6 +17,7 @@ Step 2: Install tmux
 sudo apt install tmux
 tmux new -s mysession
 ```
+
 
 For CentOS/RHEL
 
@@ -30,14 +33,18 @@ Step 3: Start a tmux Session
 tmux new -s mysession
 ```
 
+
 Step 4: Detach from the tmux Session
 
 Ctrl + B, then D
+
 
 Step 5: Reconnect to a tmux Session Later after Shutdown of PC
 
 ```bash
 tmux attach -t mysession
+```
+
 
 # If you forget the session name or have multiple sessions, list them with:
 
@@ -45,11 +52,13 @@ tmux attach -t mysession
 tmux ls
 ```
 
+
 Optional: Kill a tmux Session
 
 ```bash
 tmux kill-session -t mysession
 ```
+
 
 # TO Run Multiple Tmux Session
 
