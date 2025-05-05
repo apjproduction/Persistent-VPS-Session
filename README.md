@@ -1,3 +1,10 @@
-# Persistent-VPS-Session
-I realized that most Linux VPS session connection ends the moment the ssh connection gets a network timeout or reset.
-This guide is to enable you have a continuous session even if you decide to shutdown your Pc . 
+# 🧰 VPS Persistent Session Setup with tmux
+
+This guide shows you how to install and use `tmux` on a Linux VPS to ensure your remote sessions continue running even if your local PC shuts down or your internet disconnects.
+
+---
+
+## 📥 Step 1: Connect to Your VPS
+
+```bash
+ssh your-username@your-vps-ip
